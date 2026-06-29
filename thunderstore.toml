@@ -1,0 +1,31 @@
+[package]
+name = "CardMonkey"
+namespace = "doombubbles"
+description = "Adds in a new custom tower themed around playing cards."
+websiteUrl = "https://github.com/doombubbles/CardMonkey"
+
+[package.dependencies]
+LavaGang-MelonLoader = "0.7.3"
+doombubbles-Btd6ModHelper = "3.6.5"
+
+[build]
+icon = "./CardMonkey-Icon.png"
+readme = "./README.md"
+outdir = "bin"
+
+[[build.copy]]
+source = "./bin/Release/CardMonkey.dll"
+target = "CardMonkey.dll"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[[build.copy]]
+source = "./LICENSE"
+target = "./LICENSE"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["bloons-td-6"]
+categories = ["mods"]

@@ -1,4 +1,4 @@
-﻿using BTD_Mod_Helper;
+using BTD_Mod_Helper;
 using BTD_Mod_Helper.Api;
 using BTD_Mod_Helper.Api.ModOptions;
 using CardMonkey;
@@ -8,6 +8,7 @@ using UnityEngine;
 
 [assembly: MelonInfo(typeof(CardMonkeyMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+[assembly: MelonGame("Ninja Kiwi", "BloonsTD6-Epic")]
 
 namespace CardMonkey;
 
